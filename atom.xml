@@ -6,7 +6,7 @@
   <link href="http://antihypezero.github.io/atom.xml" rel="self"/>
   
   <link href="http://antihypezero.github.io/"/>
-  <updated>2022-07-04T17:15:38.584Z</updated>
+  <updated>2022-07-08T18:11:31.409Z</updated>
   <id>http://antihypezero.github.io/</id>
   
   <author>
@@ -17,11 +17,54 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title></title>
+    <link href="http://antihypezero.github.io/2022/07/09/%E5%86%AF%C2%B7%E8%AF%BA%E4%BC%8A%E6%9B%BC%E7%BB%93%E6%9E%84%E4%B8%8E%E7%8E%B0%E4%BB%A3%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/"/>
+    <id>http://antihypezero.github.io/2022/07/09/%E5%86%AF%C2%B7%E8%AF%BA%E4%BC%8A%E6%9B%BC%E7%BB%93%E6%9E%84%E4%B8%8E%E7%8E%B0%E4%BB%A3%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84/</id>
+    <published>2022-07-08T18:11:45.808Z</published>
+    <updated>2022-07-08T18:11:31.409Z</updated>
+    
+    <content type="html"><![CDATA[<hr><h1 id="冯·诺伊曼结构与现代计算机结构"><a href="#冯·诺伊曼结构与现代计算机结构" class="headerlink" title="冯·诺伊曼结构与现代计算机结构"></a>冯·诺伊曼结构与现代计算机结构</h1><hr><h2 id="一、冯·诺伊曼结构"><a href="#一、冯·诺伊曼结构" class="headerlink" title="一、冯·诺伊曼结构"></a>一、冯·诺伊曼结构</h2><p>###其最重要的思想时”<em>存储程序</em>“工作方式：</p><p>任何要计算机完成的工作都要先被编写成程序，然后将程序和原始数据送入主存并启动执行。一旦程序被启动，计算机应能在不需操作人员干预下，自动完成逐条取出指令的任务。</p><ul><li>要有个主存存放程序和数据</li><li>要有一个自动逐条去除指令的部件</li><li>要有能具体执行指令(即运算)的部件</li><li>程序由指令构成</li><li>指令描述如何对数据进行处理</li><li>要有将程序和原始数据输入计算机的部件</li><li>要有将运算结果输出的部件</li></ul><p><img src="https://s3.bmp.ovh/imgs/2022/07/09/1e5f1ed8b6e2fcba.jpg" title="IAS计算机结构"></p><p><img src="https://s3.bmp.ovh/imgs/2022/07/09/796fe2c8c1557377.png" title="冯·诺伊曼计算机模型"></p><p>早期，部件之间用<strong>分散方式</strong>相连</p><p>现在，部件之间大多用<strong>总线方式</strong>相连</p><p>###冯·诺伊曼结构的主要思想：</p><ol><li>计算机应由运算器、控制器、存储器、输入设备和输出设备五个基本组件组成。</li><li>各基本部件的功能是:<ul><li><strong>存储器</strong>不仅能存放数据，而且能存放指令，形式上两者没有区别名单计算机应能区分数据还是指令；</li><li><strong>控制器</strong>应能自动取出指令来执行；</li><li><strong>运算器</strong>应能进行加&#x2F;减&#x2F;乘&#x2F;除四种基本运算，并且能进行一些逻辑运算和附加运算：</li><li>操作人员可以通过<strong>输入设备、输出设备</strong>和主机进行通信。</li></ul></li><li>内部以<strong>二进制</strong>表示指令和数据，每条指令由操作码和地址吗两部分组成。操作码操作类型，地址码指出操作数的地址，由一串指令组成程序。</li><li>采用”<strong>存储程序</strong>“工作方式</li></ol><h2 id="二、现代计算机结构"><a href="#二、现代计算机结构" class="headerlink" title="二、现代计算机结构"></a>二、现代计算机结构</h2><p><img src="https://i.bmp.ovh/imgs/2022/07/09/6e24f636df2a3e9e.png" title="现代计算机结构模型"></p><p>CPU:中央处理器；  PC：程序计数器；MAR:存储器地址寄存器</p><p>ALU：算术逻辑部件；IR：指令寄存器；  MDR：存储器数据寄存器</p><p>GPRs:通用寄存器组(由若干通用寄存器组成，早期就是累加器)</p><h3 id="计算机工作方式"><a href="#计算机工作方式" class="headerlink" title="计算机工作方式"></a>计算机工作方式</h3><ol><li>数据和操作指令按序存放存储器，有对应的存储单元地址(原材料和菜谱放在架子上，每个架子有编号)</li><li>从某一指定存储地址开始(某一指定菜谱)</li><li>取指令并译码(看菜谱)</li><li>取数据(拿原材料)</li><li>指令执行并回写结果(进行做菜并装盘)</li><li>算出下一存储地址(算出下一道菜所用菜谱的位置)</li></ol><h4 id="数据与指令都存放在存储器中，都是0-x2F-1序列，为了分辨，我们需要知道"><a href="#数据与指令都存放在存储器中，都是0-x2F-1序列，为了分辨，我们需要知道" class="headerlink" title="数据与指令都存放在存储器中，都是0&#x2F;1序列，为了分辨，我们需要知道"></a>数据与指令都存放在存储器中，都是0&#x2F;1序列，为了分辨，我们需要知道</h4><ul><li>操作码(操作性质)</li><li>源操作数1 或&#x2F;和 源操作数2 (立即数、寄存器编号、存储地址)</li><li>目的操作数地址 (寄存器编号、存储地址)</li><li>存储地址地址的描述与操作数的数据结构有关</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;hr&gt;
+&lt;h1 id=&quot;冯·诺伊曼结构与现代计算机结构&quot;&gt;&lt;a href=&quot;#冯·诺伊曼结构与现代计算机结构&quot; class=&quot;headerlink&quot; title=&quot;冯·诺伊曼结构与现代计算机结构&quot;&gt;&lt;/a&gt;冯·诺伊曼结构与现代计算机结构&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;一、冯</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>计算机系统基础</title>
+    <link href="http://antihypezero.github.io/2022/07/09/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80/"/>
+    <id>http://antihypezero.github.io/2022/07/09/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80/</id>
+    <published>2022-07-08T18:11:43.224Z</published>
+    <updated>2022-07-08T18:10:58.682Z</updated>
+    
+    <content type="html"><![CDATA[<p>#计算机系统基础</p><h2 id="一、编译系统"><a href="#一、编译系统" class="headerlink" title="一、编译系统"></a>一、编译系统</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">printf(&quot;Hello World!\n&quot;);</span><br><span class="line">return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>执行这个程序，<em><strong>GCC</strong></em>编译器编译过程可分为四个阶段—-预处理阶段、编译阶段、汇编阶段、链接阶段</p><p><img src="https://s3.bmp.ovh/imgs/2022/07/08/ca9a81b4b8efc7a2.jpg"></p><p>理解编译系统如何工作对我们有很大益处：</p><ul><li><p>优化程序性嫩滑</p></li><li><p>理解链接时的错误</p></li><li><p>规避安全漏洞</p></li></ul><h2 id="二、系统的硬件组织"><a href="#二、系统的硬件组织" class="headerlink" title="二、系统的硬件组织"></a>二、系统的硬件组织</h2><ol><li>总线</li><li>I&#x2F;O(输入&#x2F;输出)设备</li><li>主存</li><li>处理器</li></ol><p><img src="https://i.bmp.ovh/imgs/2022/07/08/ffe190ed0a38cc22.jpg"></p><p>##运行hello.c</p><p><img src="https://i.bmp.ovh/imgs/2022/07/08/41ab762fced6ea1d.jpg"></p><p><img src="https://i.bmp.ovh/imgs/2022/07/08/5cbc493e8b46cb19.jpg"></p><p><img src="https://s3.bmp.ovh/imgs/2022/07/08/312f9b6926cd25d2.jpg"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;#计算机系统基础&lt;/p&gt;
+&lt;h2 id=&quot;一、编译系统&quot;&gt;&lt;a href=&quot;#一、编译系统&quot; class=&quot;headerlink&quot; title=&quot;一、编译系统&quot;&gt;&lt;/a&gt;一、编译系统&lt;/h2&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;tabl</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
     <link href="http://antihypezero.github.io/2022/07/05/hello-world/"/>
     <id>http://antihypezero.github.io/2022/07/05/hello-world/</id>
     <published>2022-07-04T17:15:38.584Z</published>
-    <updated>2022-07-04T17:15:38.584Z</updated>
+    <updated>2022-07-08T18:08:32.865Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
