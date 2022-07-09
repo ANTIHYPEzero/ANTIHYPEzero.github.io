@@ -6,7 +6,7 @@
   <link href="http://antihypezero.github.io/atom.xml" rel="self"/>
   
   <link href="http://antihypezero.github.io/"/>
-  <updated>2022-07-09T10:23:08.295Z</updated>
+  <updated>2022-07-09T17:38:59.231Z</updated>
   <id>http://antihypezero.github.io/</id>
   
   <author>
@@ -15,6 +15,66 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C语言中的整数表示</title>
+    <link href="http://antihypezero.github.io/2022/07/10/C%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E6%95%B4%E6%95%B0%E8%A1%A8%E7%A4%BA/"/>
+    <id>http://antihypezero.github.io/2022/07/10/C%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E6%95%B4%E6%95%B0%E8%A1%A8%E7%A4%BA/</id>
+    <published>2022-07-09T17:38:59.231Z</published>
+    <updated>2022-07-09T17:38:59.231Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="C语言支持的基本数据类型"><a href="#C语言支持的基本数据类型" class="headerlink" title="C语言支持的基本数据类型"></a>C语言支持的基本数据类型</h2><p><img src="https://s3.bmp.ovh/imgs/2022/07/10/90acb2c8fd9ff1a4.png"></p><h2 id="无符号整数"><a href="#无符号整数" class="headerlink" title="无符号整数"></a>无符号整数</h2><ul><li><p>机器中字的位排列顺序有两种方式：</p><ul><li>高到低位从左到右：0000 0000 0000 1011</li><li>高到低位从右到左：1011 0000 0000 0000</li><li>用LSB表示最低有效位，MSB表示最高有效位</li><li>高到低位多采用从左往右排列</li></ul></li><li><p>一般在全是正数运算且不出现复值结果的场合下，可使用无符号数表示。例如，地址运算、编号表示等。</p></li><li><p>无符号整数的编码中没有符号位</p></li><li><p>能表示的最大值大于位数相同的带符号整数的最大值</p><blockquote><p>8位无符号整数的最大值是255(1111 1111)</p><p>8位有符号整数的最大值是127(0111 1111)</p></blockquote></li></ul><h2 id="带符号整数"><a href="#带符号整数" class="headerlink" title="带符号整数"></a>带符号整数</h2><ul><li>计算机必须能处理正数和负数，用MSB表示数符(0–整数，1–负数)</li><li>有三种定点编码方式<ul><li>原码—-定点小数，用来表示浮点数的尾数</li><li>移码—-定点整数，用于表示浮点数的阶</li><li>补码—-所有计算机都用补码来表示带符号整数</li></ul></li></ul><h2 id="C语言程序中的整数"><a href="#C语言程序中的整数" class="headerlink" title="C语言程序中的整数"></a>C语言程序中的整数</h2><p><img src="https://s3.bmp.ovh/imgs/2022/07/10/b217a8936d5c29ba.png"></p><p><img src="https://s3.bmp.ovh/imgs/2022/07/10/ce24b332e79a6522.png"></p><p><img src="https://s3.bmp.ovh/imgs/2022/07/10/96216700398374ce.png"></p><h3 id="编译器处理常量时默认的类型"><a href="#编译器处理常量时默认的类型" class="headerlink" title="编译器处理常量时默认的类型"></a>编译器处理常量时默认的类型</h3><p><img src="https://s3.bmp.ovh/imgs/2022/07/10/8e9e9fc5389d7175.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;C语言支持的基本数据类型&quot;&gt;&lt;a href=&quot;#C语言支持的基本数据类型&quot; class=&quot;headerlink&quot; title=&quot;C语言支持的基本数据类型&quot;&gt;&lt;/a&gt;C语言支持的基本数据类型&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://s3.bmp.ovh/i</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>定点数的编码表示</title>
+    <link href="http://antihypezero.github.io/2022/07/10/%E5%AE%9A%E7%82%B9%E6%95%B0%E7%9A%84%E7%BC%96%E7%A0%81%E8%A1%A8%E7%A4%BA/"/>
+    <id>http://antihypezero.github.io/2022/07/10/%E5%AE%9A%E7%82%B9%E6%95%B0%E7%9A%84%E7%BC%96%E7%A0%81%E8%A1%A8%E7%A4%BA/</id>
+    <published>2022-07-09T17:15:56.465Z</published>
+    <updated>2022-07-09T17:15:56.466Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="原码"><a href="#原码" class="headerlink" title="原码"></a>原码</h2><p><img src="https://s3.bmp.ovh/imgs/2022/07/10/0005737aa170a688.png"></p><p>不足：</p><ul><li>0的表示不唯一，不利于编程</li><li>加、减运算方式不统一</li><li>需额外对符号位进行处理，不利于硬件设计</li><li>当a&lt;b时，实现a-b比价困难</li></ul><p><strong>从50年代开始，整数都采用补码来表示，但浮点数的尾数用原码定点小数表示</strong></p><h2 id="补码"><a href="#补码" class="headerlink" title="补码"></a>补码</h2><p><img src="https://s3.bmp.ovh/imgs/2022/07/10/9dfdea2fe3dac341.png"></p><p><img src="https://s3.bmp.ovh/imgs/2022/07/10/eccdc12aa75327c5.png"></p><p><img src="https://s3.bmp.ovh/imgs/2022/07/10/c46bb0da7956a42a.png"></p><p><img src="https://s3.bmp.ovh/imgs/2022/07/10/33e7f4aeb9f3b082.png"></p><p><img src="https://s3.bmp.ovh/imgs/2022/07/10/fe721f4dca61b33f.png"></p><h2 id="移码表示"><a href="#移码表示" class="headerlink" title="移码表示"></a>移码表示</h2><p><img src="https://s3.bmp.ovh/imgs/2022/07/10/c5a4df4ffc2d941d.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;原码&quot;&gt;&lt;a href=&quot;#原码&quot; class=&quot;headerlink&quot; title=&quot;原码&quot;&gt;&lt;/a&gt;原码&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://s3.bmp.ovh/imgs/2022/07/10/0005737aa170a688.png&quot;&gt;&lt;/p</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>数值与编码</title>
+    <link href="http://antihypezero.github.io/2022/07/10/%E6%95%B0%E5%80%BC%E4%B8%8E%E7%BC%96%E7%A0%81/"/>
+    <id>http://antihypezero.github.io/2022/07/10/%E6%95%B0%E5%80%BC%E4%B8%8E%E7%BC%96%E7%A0%81/</id>
+    <published>2022-07-09T16:43:21.323Z</published>
+    <updated>2022-07-09T16:43:21.323Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="“转换”概念在数据表示中的反应"><a href="#“转换”概念在数据表示中的反应" class="headerlink" title="“转换”概念在数据表示中的反应"></a>“转换”概念在数据表示中的反应</h2><p><img src="https://s3.bmp.ovh/imgs/2022/07/09/54dc8463ae2c4121.png"></p><p><img src="https://s3.bmp.ovh/imgs/2022/07/09/bc779fddbb4dead3.png"></p><h2 id="信息的二进制编码"><a href="#信息的二进制编码" class="headerlink" title="信息的二进制编码"></a>信息的二进制编码</h2><ul><li><p>机器级数据分两大类</p><ul><li>数值数据：无符号数、带符号整数、浮点数(实数)</li><li>非数值数据：逻辑数(包括位串)、西文字符和汉字</li></ul></li><li><p>计算机内部所有信息用二进制进行编码</p></li><li><p>用二进制的原因</p><ul><li>制造两个稳定态的物理器件容易(电位高&#x2F;低、脉冲有&#x2F;无、正&#x2F;负极)</li><li>二进制编码、计数、运算规则简单</li><li>正好与逻辑命题真&#x2F;假对应，便于逻辑运算</li><li>可方便地用逻辑电路实现算术运算</li></ul></li><li><p>真值和机器数</p><ul><li>机器数：用0和1编码的计算机内部的0&#x2F;1序列</li><li>真值：真正的值，即现实中带正负号的数</li></ul></li></ul><blockquote><p>unsigned short型变量x的真值是127，其机器数是多少？</p><p>127&#x3D;2^7-1，其机器数为0000 0000 0111 1111</p></blockquote><h2 id="数值数据的表示"><a href="#数值数据的表示" class="headerlink" title="数值数据的表示"></a>数值数据的表示</h2><ul><li>数值数据表示的三要素<ul><li>进位计数制</li><li>定、浮点表示</li><li>如何用二进制编码</li></ul></li><li>进位计数制<ul><li>十进制、二进制、十六进制、八进制及其相互转换</li></ul></li><li>定&#x2F;浮点表示(解决小数点问题)<ul><li>定点整数、定点小数</li><li>浮点数(可用一个定点小数和一个定点整数来表示)</li></ul></li><li>定点数的编码(解决正负号问题)<ul><li>原码、补码、反码、移码</li></ul></li></ul><h2 id="数制及其转化"><a href="#数制及其转化" class="headerlink" title="数制及其转化"></a>数制及其转化</h2><h3 id="R进位计数制"><a href="#R进位计数制" class="headerlink" title="R进位计数制"></a>R进位计数制</h3><ul><li>采用R个基本符号(0，1，2，3，R-1)表示各位数字</li><li>逢R进1</li><li>对于每一数位i，该位上的权为R^i</li><li>R被称为该数字系统的基</li></ul><p>八进制：R&#x3D;8，基本符号为0，1，2，3，4，5，6，7 (后缀”O”表示)</p><p>十六进制：R&#x3D;16，基本符号为0，1，2，3，4，5，6，7，8，9，A，B，C，D，E，F (后缀”H”或前缀”OX”表示)</p><p><img src="https://s3.bmp.ovh/imgs/2022/07/09/b2070961757cdc98.png"></p><h3 id="进制间转化"><a href="#进制间转化" class="headerlink" title="进制间转化"></a>进制间转化</h3><ul><li>略</li></ul><h2 id="定点数和浮点数"><a href="#定点数和浮点数" class="headerlink" title="定点数和浮点数"></a>定点数和浮点数</h2><ul><li>计算机中只能通过约定小数点的位置来表示<ul><li>小数点位置约定在固定位置的数称为定点数</li><li>小数点位置约定为可浮动的数称为浮点数</li></ul></li><li>定点小数用来表示浮点数的尾数部分</li><li>定点整数用来表示整数，分带符号整数和无符号整数</li><li>任何实数：X&#x3D;(-1)^s* M * R^E<ul><li>其中，S取值为0或1，决定X的符号；M是二进制定点小数，为X的尾数；E是一个二进制定点整数，为数X的阶或指数 ；R是基数，可以是2、4、8等。只要表示S、M、E，就能确定X的值，这称为浮点数。</li></ul></li></ul><table><thead><tr><th align="center">S</th><th align="center">E</th><th align="center">M</th></tr></thead></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;“转换”概念在数据表示中的反应&quot;&gt;&lt;a href=&quot;#“转换”概念在数据表示中的反应&quot; class=&quot;headerlink&quot; title=&quot;“转换”概念在数据表示中的反应&quot;&gt;&lt;/a&gt;“转换”概念在数据表示中的反应&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>冯·诺伊曼结构与现代计算机结构</title>
