@@ -6,7 +6,7 @@
   <link href="http://antihypezero.github.io/atom.xml" rel="self"/>
   
   <link href="http://antihypezero.github.io/"/>
-  <updated>2022-07-09T17:38:59.231Z</updated>
+  <updated>2022-07-15T10:39:28.458Z</updated>
   <id>http://antihypezero.github.io/</id>
   
   <author>
@@ -15,6 +15,75 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数据存储</title>
+    <link href="http://antihypezero.github.io/2022/07/15/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8/"/>
+    <id>http://antihypezero.github.io/2022/07/15/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8/</id>
+    <published>2022-07-15T10:39:28.457Z</published>
+    <updated>2022-07-15T10:39:28.458Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="数据宽度"><a href="#数据宽度" class="headerlink" title="数据宽度"></a>数据宽度</h3><ul><li><p>比特（ bit ，位）是计算机中处理、存储、传输信息的最小单位</p></li><li><p>二进制信息最基本的计量单位是“字节”( Byte )</p><ul><li>现代计算机中，存储器按字节编址</li><li>字节是最小可寻址单位( addressable unit )</li><li>如果以字节为一个排列单位，则 LSB 表示最低有效字节， MSB 表示最高有效字节</li></ul></li><li><p>除比特（位）和字节外，还经常使用“字”( word ）作为单位</p><ul><li><p>“字”和“字长”的概念不同</p><blockquote><p>IA -32中的“字”有多少位？位字长多少位呢？</p><p>16位32位 </p><p>DWORD :32位 QwORD :64位</p></blockquote><blockquote><p>数据通路指 CPU 内部数据流经的路径以及路径上的部件，主要是 CPU 内部进行数据运算、存储和传送的部件，这些部件的宽度基本上要一致，才能相互匹配。</p></blockquote></li><li><p>“字长”指数据通路的宽度。<strong>”字长”等于 CPU 内部总线的宽度、运算器的位数、通用寄存器的宽度（这些部件的宽度都是一样的）</strong></p></li><li><p>“字”表示被处理信息的单位，用来度量数据类型的宽度</p></li><li><p>字和字长的宽度可以一样，也可不同</p><blockquote><p>例1：对于x86体系结构，不管字长多少，定义“字”的宽度都为16位，而从386开始字长就是32位了<br>例2：对于 MIPS 32体系结构，其字和字长都是32位</p></blockquote></li></ul></li></ul><h3 id="数据量的度量单位"><a href="#数据量的度量单位" class="headerlink" title="数据量的度量单位"></a>数据量的度量单位</h3><ul><li>存储二进制信息时的度量单位要比字节或字大得多</li><li>容量经常使用的单位有：<ul><li>“干字节”( KB ),1KB&#x3D;210字节＝1024B</li><li>“兆字节”( MB ),1MB&#x3D;220字节＝1024KB</li><li>“干兆字节”( GB ),1GB&#x3D;230字节＝1024MB</li><li>“兆兆字节”( TB ),1TB&#x3D;240字节＝1024GB</li></ul></li><li>通信中的带宽使用的单位有：<ul><li>千比特／秒”( kb &#x2F; s ),1kbps&#x3D;103 b &#x2F; s &#x3D;1000 bps </li><li>“兆比特／秒”( Mb &#x2F; s ),1Mbps&#x3D;106 b &#x2F; s &#x3D;1000 kbps</li><li>“干兆比特／秒”( Gb &#x2F; s ),1Gbps&#x3D;109 b &#x2F; s &#x3D;1000 Mbps </li><li>“兆兆比特／秒”( Tb &#x2F; s ),1Tbps&#x3D;1012 b &#x2F; s &#x3D;1000 Gbps</li></ul></li></ul><p><strong>如果把 b 换成 B ，则表示字节而不是比特（位）</strong></p><p><strong>例如，10MBps表示10兆字节／秒</strong></p><h4 id="程序中数据类型的宽度"><a href="#程序中数据类型的宽度" class="headerlink" title="程序中数据类型的宽度"></a>程序中数据类型的宽度</h4><ul><li><p>高级语言支持多种不同类型和不同长度的数据</p><blockquote><p>C 语言中 char 类型的宽<br>度为1个字节，可表示一个字符（非数值数据），也可表示一个8位的整数（数值数据）﹣不同机器上表示的同一种类型的数据可能宽度不同</p></blockquote></li><li><p>必须确定相应的机器级数据表示方式和相应的处理指令</p></li></ul><p><img src="https://s3.bmp.ovh/imgs/2022/07/15/72f3ad0d9c78211e.png"></p><h3 id="数据存储时的排列方式"><a href="#数据存储时的排列方式" class="headerlink" title="数据存储时的排列方式"></a>数据存储时的排列方式</h3><p><strong>多字节数据都存放在连续的字节序列中, 根据数据中各字节在连续字节序列中的排列顺序不同,可以采用两种排列方式:大端方式和小端方式</strong></p><ul><li>大端方式(Big Endian)：MSB所在地址是数的地址</li></ul><table><thead><tr><th>FE</th><th>AB</th><th>04</th><th>11</th><th></th></tr></thead><tbody><tr><td>100</td><td>101</td><td>102</td><td>103</td><td>大端</td></tr><tr><td>MSB</td><td></td><td></td><td>LSB</td><td></td></tr><tr><td>103</td><td>102</td><td>101</td><td>100</td><td>小端</td></tr></tbody></table><ul><li>小端方式(Little Endian)：LSB所在的地址是数的地址</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;数据宽度&quot;&gt;&lt;a href=&quot;#数据宽度&quot; class=&quot;headerlink&quot; title=&quot;数据宽度&quot;&gt;&lt;/a&gt;数据宽度&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;比特（ bit ，位）是计算机中处理、存储、传输信息的最小单位&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;二进制信</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>非数值数据的编码表示</title>
+    <link href="http://antihypezero.github.io/2022/07/15/%E9%9D%9E%E6%95%B0%E5%80%BC%E6%95%B0%E6%8D%AE%E7%9A%84%E7%BC%96%E7%A0%81%E8%A1%A8%E7%A4%BA/"/>
+    <id>http://antihypezero.github.io/2022/07/15/%E9%9D%9E%E6%95%B0%E5%80%BC%E6%95%B0%E6%8D%AE%E7%9A%84%E7%BC%96%E7%A0%81%E8%A1%A8%E7%A4%BA/</id>
+    <published>2022-07-15T09:42:28.910Z</published>
+    <updated>2022-07-15T09:42:28.910Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="逻辑数据"><a href="#逻辑数据" class="headerlink" title="逻辑数据"></a>逻辑数据</h3><ul><li>用处<ul><li>表示逻辑(关系)表达式中的逻辑值：真&#x2F;假</li></ul></li><li>表示<ul><li>用一位表示，n位二进制数(位串)可表示n个逻辑数据</li></ul></li><li>运算<ul><li>按位进行，如，按位与&#x2F;按位或&#x2F;逻辑左移&#x2F;逻辑右移</li></ul></li><li>识别<ul><li>逻辑数据和数值数据在形式上并无差别，都是0&#x2F;1序列，计算机靠指令识别</li></ul></li></ul><h3 id="西文字符"><a href="#西文字符" class="headerlink" title="西文字符"></a>西文字符</h3><ul><li>特点<ul><li>用有限个字母可拼写出所有单词</li><li>只需对有限个字母、数学符号和标点符号等辅助字符编码</li><li>所有字符总数不超过256个，使用7或8个二进位可表示</li></ul></li><li>表示<ul><li>常用编码位7位ASCII码</li><li>十进制数、英文字母、专用符号、控制字符</li></ul></li><li>操作<ul><li>字符串操作，如：传送&#x2F;比较等</li></ul></li></ul><h3 id="汉字及国际字符"><a href="#汉字及国际字符" class="headerlink" title="汉字及国际字符"></a>汉字及国际字符</h3><ul><li>汉字特点<ul><li>汉字是表意文字，一个字就是一个图形</li><li>汉字数据量大，总数超过6万字</li></ul></li><li>编码形式<ul><li>输入码：对汉字用相应按键进行编码表示，用于输入</li><li>内码：用于在系统中进行存储、查找、传送等处理</li><li>字模点或轮廓描述：描述汉字字模点阵或轮廓，用于显示&#x2F;打印</li></ul></li></ul><h4 id="GB2312-80字符集"><a href="#GB2312-80字符集" class="headerlink" title="GB2312-80字符集"></a>GB2312-80字符集</h4><ul><li><p>三部分组成</p><ul><li>字母、数字和各种符号，包括英文、俄文、日文平假名与片假名、罗马字母、汉语拼音等共687个</li><li>一级常用汉字共3755个，按汉语拼音排列</li><li>二级常用汉字，共3008个，按偏旁部首排列</li></ul></li><li><p>汉字的区位码</p><ul><li>码表由94行、94列组成，行号为区号，列号为位号，各站7位</li><li>指出汉字在码表中的位置，共14位，区号在左，位号在右</li></ul></li><li><p>汉字的国标码</p><ul><li>每个汉字的区号和位号各自加上32，得到“国标码”</li><li>国标码中区号和位号各占7位，为方便处理与存储，前面添一个0，构成一个字节</li></ul></li></ul><h4 id="汉字内码"><a href="#汉字内码" class="headerlink" title="汉字内码"></a>汉字内码</h4><ul><li><p>至少需2个字节才能表示一个汉字内码</p><ul><li>由汉字的总数（超过6万字）决定!2^16&#x3D;65536</li></ul></li><li><p>可在GB2312国标码的基础上产生汉字内码</p><ul><li><p>为与 ASCI I码区别，将国标码的两个字节的第一位置“1”后得到一种汉字内码（可以有不同的编码方案）</p><blockquote><p>汉字“大”在码表中位于第20行、第83列。因此区位码为00101001010011，在区、位码上各加32得到两个字节编码，即0011010001110011B&#x3D;3473H。前面的34H和字符“4”的 ACSI 码相同，后面的73H和字符“ s ”的 ACSII 码相同，但是，将每个字节的最高位各设为“1”后，就得到其内码：B4F3H(10110100<br>11110011B)，因而不会和 ASCII 码混淆。</p></blockquote></li></ul></li></ul><h4 id="多媒体信息"><a href="#多媒体信息" class="headerlink" title="多媒体信息"></a>多媒体信息</h4><ul><li>图形、图像、音频、视频等信息在机器内部也用0和1表示<ul><li>图形用构建图形的直线或曲线的坐标点及控制点来描述，而这些坐标点或控制点则用数值数据描述</li><li>图像用构成图像的点（像素）的亮度、颜色或灰度等信息来描述，这些亮度或颜色等值则用数值数据描述</li><li>音频信息通过对模拟声音进行采样、量化（用二进制编码）来获得，因此量化后得到的是一个数值数据序列（随时间变化）</li><li>视频信息描述的是随时间变化的图像（每一幅图像称为一帧）</li><li>音乐信息（ MIDI ）通过对演奏的乐器、乐谱等相关的各类信息用0和1进行编码来描述</li></ul></li><li>多媒体信息用一个复杂的数据结构来描述，其中的基本数据或者是数值数据，或者是用0&#x2F;1编码的非数值数据</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;逻辑数据&quot;&gt;&lt;a href=&quot;#逻辑数据&quot; class=&quot;headerlink&quot; title=&quot;逻辑数据&quot;&gt;&lt;/a&gt;逻辑数据&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;用处&lt;ul&gt;
+&lt;li&gt;表示逻辑(关系)表达式中的逻辑值：真&amp;#x2F;假&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;l</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://antihypezero.github.io/2022/07/15/%E6%B5%AE%E7%82%B9%E6%95%B0/"/>
+    <id>http://antihypezero.github.io/2022/07/15/%E6%B5%AE%E7%82%B9%E6%95%B0/</id>
+    <published>2022-07-14T16:42:47.834Z</published>
+    <updated>2022-07-15T10:50:27.918Z</updated>
+    
+    <content type="html"><![CDATA[<hr><h2 id="title-浮点数"><a href="#title-浮点数" class="headerlink" title="title:浮点数"></a>title:浮点数</h2><h3 id="科学计数法与浮点数"><a href="#科学计数法与浮点数" class="headerlink" title="科学计数法与浮点数"></a>科学计数法与浮点数</h3><blockquote><p>例：7.14 × 10^2003</p><p>0.14为尾数(mantissa)，10为基(base,radix)，2003为阶、指数(Exponent)</p></blockquote><h3 id="规格化数形式"><a href="#规格化数形式" class="headerlink" title="规格化数形式"></a>规格化数形式</h3><blockquote><p>+&#x2F;-1. xxxxxxxxxx   ×   R^Exponent</p></blockquote><p><strong>32-bit 规格化数：</strong></p><p>310</p><table><thead><tr><th>Sign</th><th>Exponent</th><th>Significant</th></tr></thead></table><ul><li>Sign是符号位，占1个bit</li><li>Exponent用移码表示</li><li>Significant表示xxxxxxxxx(部分尾数)</li><li>基是约定信息不必显示</li></ul><h4 id="IEEE-754标准"><a href="#IEEE-754标准" class="headerlink" title="IEEE 754标准"></a>IEEE 754标准</h4><blockquote><p>+&#x2F;-1. xxxxxxxxxx(two)   ×   R^exponent</p><p>规定：小数点前总是“1”，可隐含表示</p></blockquote><p><strong>Single Precision(单精度)：</strong></p><table><thead><tr><th>Sign</th><th>Exponent</th><th>Significand</th></tr></thead><tbody><tr><td>1 bit</td><td>8 bits</td><td>23 bits</td></tr></tbody></table><ul><li>Sign：1表示-，0表示+</li><li>Exponent：<ul><li>SP规格化阶码范围为0000 0001(-126)~1111 1110(127)</li><li>bias为127，1023(double)</li><li>全0与全1表示特殊值</li></ul></li><li>Significand (部分尾数)：<ul><li>规格化尾数最高位总是1，所以隐含表示，省1位</li><li>1+8+23 bits (single)，1+11+52 bits (double)</li></ul></li></ul><p>SP：(-1)^S × (1+Significand) × 2^(Exponent-127)</p><p>DP：(-1)^S × (1+Significand) × 2^(Exponent-1023)</p><blockquote><p>机器数转化为真值</p><p>已知float型变量x的机器数为BEE00000H,求x的值是多少</p></blockquote><blockquote><table><thead><tr><th>1</th><th>0111 1101</th><th>110 0000 0000 0000 0000 0000</th></tr></thead></table><p>Sign：1 </p><p>Exponent：阶码：0111 1101 &#x3D; 125阶码的值：125-127 &#x3D; -2</p><p>Significand：1+0.5+0.25 &#x3D; 1.75</p><p>真值：-1.75 × 2^-2 &#x3D; -0.4375</p></blockquote><blockquote><p>机器数转化为真值</p><p>已知float型变量x的值为-12.75，求x的机器数是多少</p></blockquote><blockquote><p>-12.75 &#x3D; -1100.11B &#x3D; -1.10011B × 2^3</p><p>Sign &#x3D; 1</p><p>Exponent &#x3D; 127+3 &#x3D; 128+2 &#x3D; 1000 0010</p><p>Significant &#x3D; 100 1100 0000 0000 0000 0000</p><p>机器数：</p><table><thead><tr><th>1</th><th>1000 0010</th><th>100 1100 0000 0000 0000 0000</th></tr></thead></table></blockquote><h3 id="特殊数"><a href="#特殊数" class="headerlink" title="特殊数"></a>特殊数</h3><h4 id="0的机器数表示"><a href="#0的机器数表示" class="headerlink" title="0的机器数表示"></a>0的机器数表示</h4><ul><li>Exponent：all zeros</li><li>Significand：all zeros</li></ul><blockquote><p>+0：0 00000000 00000000000000000000000</p><p>-0：1 00000000 00000000000000000000000</p></blockquote><h4 id="∞-x2F-∞的机器数表示"><a href="#∞-x2F-∞的机器数表示" class="headerlink" title="+∞&#x2F;-∞的机器数表示"></a>+∞&#x2F;-∞的机器数表示</h4><ul><li>Exponent：all ones</li><li>Significand：all zeros</li></ul><blockquote><p>+∞：0 11111111 00000000000000000000000</p><p>-∞：1 11111111 00000000000000000000000</p></blockquote><blockquote><p>浮点数除以0的结果是+&#x2F;-∞，而不是溢出异常(整数除以0为异常)</p></blockquote><h4 id="“非数”的表示"><a href="#“非数”的表示" class="headerlink" title="“非数”的表示"></a>“非数”的表示</h4><ul><li>Exponent&#x3D;255</li><li>Significand：nonzero</li></ul><blockquote><p>Not a Numer(NaN)</p></blockquote><blockquote><p>例：sqrt(-4.0) &#x3D; NaN0&#x2F;0 &#x3D; NaN</p><p>+∞-(+∞) &#x3D; NaN∞&#x2F;∞ &#x3D; NaN</p></blockquote><h4 id="非规格化数"><a href="#非规格化数" class="headerlink" title="非规格化数"></a>非规格化数</h4><ul><li>Exponent &#x3D; 0</li><li>Significand：nonzero</li></ul><blockquote><p>表示Denorms(非规格化数)</p></blockquote><h3 id="浮点数精度"><a href="#浮点数精度" class="headerlink" title="浮点数精度"></a>浮点数精度</h3><p>当数据是一个不可表示数时，机器将其转化为最邻近的可表示数。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;hr&gt;
+&lt;h2 id=&quot;title-浮点数&quot;&gt;&lt;a href=&quot;#title-浮点数&quot; class=&quot;headerlink&quot; title=&quot;title:浮点数&quot;&gt;&lt;/a&gt;title:浮点数&lt;/h2&gt;&lt;h3 id=&quot;科学计数法与浮点数&quot;&gt;&lt;a href=&quot;#科学计数法与浮点数&quot; </summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>C语言中的整数表示</title>
