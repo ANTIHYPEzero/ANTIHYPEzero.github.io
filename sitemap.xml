@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://antihypezero.github.io/2022/07/15/csapp-lab1/</loc>
+    
+    <lastmod>2022-07-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://antihypezero.github.io/2022/07/15/%E6%B5%AE%E7%82%B9%E6%95%B0/</loc>
     
     <lastmod>2022-07-15</lastmod>
@@ -112,7 +121,7 @@
 
   <url>
     <loc>http://antihypezero.github.io/</loc>
-    <lastmod>2022-07-15</lastmod>
+    <lastmod>2022-07-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
