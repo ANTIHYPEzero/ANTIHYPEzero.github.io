@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://antihypezero.github.io/2022/09/17/%E8%A5%BF%E7%94%B5%E6%96%B0%E7%94%9F%E8%B5%9BWP/</loc>
+    
+    <lastmod>2022-09-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://antihypezero.github.io/2022/07/15/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8/</loc>
     
     <lastmod>2022-08-06</lastmod>
@@ -139,7 +148,7 @@
 
   <url>
     <loc>http://antihypezero.github.io/</loc>
-    <lastmod>2022-08-06</lastmod>
+    <lastmod>2022-09-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
