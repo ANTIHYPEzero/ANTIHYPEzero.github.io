@@ -6,7 +6,7 @@
   <link href="http://antihypezero.github.io/atom.xml" rel="self"/>
   
   <link href="http://antihypezero.github.io/"/>
-  <updated>2022-09-17T13:08:24.699Z</updated>
+  <updated>2022-09-19T10:40:35.560Z</updated>
   <id>http://antihypezero.github.io/</id>
   
   <author>
@@ -17,18 +17,19 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>西电新生赛WP</title>
+    <title>西电新生赛WP--PWN篇</title>
     <link href="http://antihypezero.github.io/2022/09/17/%E8%A5%BF%E7%94%B5%E6%96%B0%E7%94%9F%E8%B5%9BWP/"/>
     <id>http://antihypezero.github.io/2022/09/17/%E8%A5%BF%E7%94%B5%E6%96%B0%E7%94%9F%E8%B5%9BWP/</id>
     <published>2022-09-17T13:08:24.699Z</published>
-    <updated>2022-09-17T13:08:24.699Z</updated>
+    <updated>2022-09-19T10:40:35.560Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="PWN"><a href="#PWN" class="headerlink" title="PWN!"></a>PWN!</h1><h2 id="二进制漏洞审计之入门指北"><a href="#二进制漏洞审计之入门指北" class="headerlink" title="二进制漏洞审计之入门指北"></a>二进制漏洞审计之入门指北</h2><p>阅读文档，flag在文档文档最后</p><p>（<del>忘记截图了</del>）</p><p>##shell</p><p>打开Linux，复制题目地址</p><p>然后输入cat flag</p><p><img src="https://s3.bmp.ovh/imgs/2022/09/17/b407518286ea40de.bmp"></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="二进制漏洞审计之入门指北"><a href="#二进制漏洞审计之入门指北" class="headerlink" title="二进制漏洞审计之入门指北"></a>二进制漏洞审计之入门指北</h2><p>阅读文档，flag在文档文档最后</p><p>（<del>忘记截图了</del>）</p><p>##shell</p><p>打开Linux，复制题目地址</p><p>然后输入cat flag</p><p><img src="https://s3.bmp.ovh/imgs/2022/09/17/b407518286ea40de.bmp"></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;PWN&quot;&gt;&lt;a href=&quot;#PWN&quot; class=&quot;headerlink&quot; title=&quot;PWN!&quot;&gt;&lt;/a&gt;PWN!&lt;/h1&gt;&lt;h2 id=&quot;二进制漏洞审计之入门指北&quot;&gt;&lt;a href=&quot;#二进制漏洞审计之入门指北&quot; class=&quot;headerlink&quot; ti</summary>
+    <summary type="html">&lt;h2 id=&quot;二进制漏洞审计之入门指北&quot;&gt;&lt;a href=&quot;#二进制漏洞审计之入门指北&quot; class=&quot;headerlink&quot; title=&quot;二进制漏洞审计之入门指北&quot;&gt;&lt;/a&gt;二进制漏洞审计之入门指北&lt;/h2&gt;&lt;p&gt;阅读文档，flag在文档文档最后&lt;/p&gt;
+&lt;p&gt;（&lt;del&gt;</summary>
       
     
     
