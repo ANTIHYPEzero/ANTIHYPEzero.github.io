@@ -6,7 +6,7 @@
   <link href="http://antihypezero.github.io/atom.xml" rel="self"/>
   
   <link href="http://antihypezero.github.io/"/>
-  <updated>2023-01-08T14:53:12.192Z</updated>
+  <updated>2023-01-13T02:03:12.655Z</updated>
   <id>http://antihypezero.github.io/</id>
   
   <author>
@@ -17,19 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>机器学习</title>
     <link href="http://antihypezero.github.io/2023/01/08/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     <id>http://antihypezero.github.io/2023/01/08/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</id>
     <published>2023-01-08T14:53:06.745Z</published>
-    <updated>2023-01-08T14:53:12.192Z</updated>
+    <updated>2023-01-13T02:03:12.655Z</updated>
     
-    <content type="html"><![CDATA[<hr><h2 id="title-机器学习"><a href="#title-机器学习" class="headerlink" title="title:机器学习"></a>title:机器学习</h2><h2 id="监督学习"><a href="#监督学习" class="headerlink" title="监督学习"></a>监督学习</h2><p><strong>标签，是连续值还是离散值，将监督学习问题分为分类问题和回归问题，其中分类问题的标签是离散值，回归问题的标签是连续值</strong>。</p><p>example:</p><p><a href="https://imgse.com/i/pSVoOWq"><img src="https://s1.ax1x.com/2023/01/08/pSVoOWq.png" alt="pSVoOWq.png" style="zoom: 50%;" /></a></p><p><a href="https://imgse.com/i/pSVovlV"><img src="https://s1.ax1x.com/2023/01/08/pSVovlV.png" alt="pSVovlV.png" style="zoom: 50%;" /></a></p><h2 id="非监督学习"><a href="#非监督学习" class="headerlink" title="非监督学习"></a>非监督学习</h2><p><strong>无监督学习是一种机器学习的训练方式，它本质上是一个统计手段，在没有标签的数据里可以发现潜在的一些结构的一种训练方式。</strong></p><p><a href="https://imgse.com/i/pSVHHTe"><img src="https://s1.ax1x.com/2023/01/08/pSVHHTe.png" alt="pSVHHTe.png" style="zoom:50%;" /></a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="监督学习"><a href="#监督学习" class="headerlink" title="监督学习"></a>监督学习</h2><p><strong>标签，是连续值还是离散值，将监督学习问题分为分类问题和回归问题，其中分类问题的标签是离散值，回归问题的标签是连续值</strong>。</p><p>example:</p><p><a href="https://imgse.com/i/pSVoOWq"><img src="https://s1.ax1x.com/2023/01/08/pSVoOWq.png" alt="pSVoOWq.png" style="zoom: 50%;" /></a></p><p><a href="https://imgse.com/i/pSVovlV"><img src="https://s1.ax1x.com/2023/01/08/pSVovlV.png" alt="pSVovlV.png" style="zoom: 50%;" /></a></p><h2 id="非监督学习"><a href="#非监督学习" class="headerlink" title="非监督学习"></a>非监督学习</h2><p><strong>无监督学习是一种机器学习的训练方式，它本质上是一个统计手段，在没有标签的数据里可以发现潜在的一些结构的一种训练方式。</strong></p><p><a href="https://imgse.com/i/pSVHHTe"><img src="https://s1.ax1x.com/2023/01/08/pSVHHTe.png" alt="pSVHHTe.png" style="zoom:50%;" /></a></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;hr&gt;
-&lt;h2 id=&quot;title-机器学习&quot;&gt;&lt;a href=&quot;#title-机器学习&quot; class=&quot;headerlink&quot; title=&quot;title:机器学习&quot;&gt;&lt;/a&gt;title:机器学习&lt;/h2&gt;&lt;h2 id=&quot;监督学习&quot;&gt;&lt;a href=&quot;#监督学习&quot; class=</summary>
+    <summary type="html">&lt;h2 id=&quot;监督学习&quot;&gt;&lt;a href=&quot;#监督学习&quot; class=&quot;headerlink&quot; title=&quot;监督学习&quot;&gt;&lt;/a&gt;监督学习&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;标签，是连续值还是离散值，将监督学习问题分为分类问题和回归问题，其中分类问题的标签是离散值，回归问题的标签是</summary>
       
     
     
